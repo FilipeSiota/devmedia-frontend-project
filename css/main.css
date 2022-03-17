@@ -1,0 +1,380 @@
+/*=====================================
+# INITIAL CONFIG
+=====================================*/
+
+:root {
+    font-size: 70%;
+    font-family: 'Raleway', sans-serif;
+
+    --primary-background: #f7f7f7;
+    --secondary-background: #ffffff;
+    --text: #000000;
+    --primary-color: #ff0000;
+    --primary-color-lighter: #fa8072;
+    --secondary-color: #646464;
+    --secondary-color-lighter: #d8d7d7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    outline: 0;
+    text-decoration: none;
+    border: none;
+}
+
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    min-width: 320px;
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    background-color: var(--primary-background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*=====================================
+# GLOBAL STYLES
+=====================================*/
+
+header, main, footer {
+    width: 100%;
+}
+
+main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i {
+    vertical-align: middle;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.title {
+    color: var(--text);
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+a {
+    transition: all 0.2s ease;
+}
+
+.btn {
+    color: var(--primary-background);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-top: 15px;
+    width: fit-content;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+figure {
+    overflow: hidden;
+}
+
+figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.2s ease;
+}
+
+figure img:hover {
+    transform: scale(1.1);
+}
+
+label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+input {
+    background-color: var(--primary-background);
+    display: block;
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+
+    border: 1px solid var(--secondary-color-lighter);
+    box-shadow: 0px 0px 2px var(--secondary-color-lighter);
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+input:focus {
+    box-shadow: 0px 0px 4px var(--text);
+}
+
+/*=====================================
+# HEADER
+=====================================*/
+
+.top-bar {
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+.top-bar #logo {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.top-bar #logo i {
+    margin-right: 10px;
+}
+
+.top-bar #search-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--secondary-color);
+}
+
+.header-content {
+    background-image: url(../img/london.jpg);
+    background-attachment: contain;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .section-group {
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0;
+
+    max-width: 800px;
+    width: 100%;
+}
+
+.header-content .section-group #selector {
+    background-color: var(--text);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-content .section-group #selector a {
+    background-color: var(--text);
+    color: var(--primary-background);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    padding: 10px;
+
+    transition: all 0.2s linear;
+}
+
+.header-content .section-group #selector a:hover {
+    background-color: var(--primary-background);
+    color: var(--text);
+}
+
+.header-content .section-group #selector a:nth-child(1) {
+    background-color: var(--primary-color);
+    pointer-events: none;
+}
+
+.header-content .section-group #selector i {
+    margin-right: 15px;
+}
+
+.header-content .section-group-content {
+    background-color: var(--primary-background);
+    padding: 25px 15px;
+}
+
+.header-content .section-group-content .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.header-content .section-group-content .btn {
+    background-color: var(--secondary-color);
+}
+
+/*=====================================
+# MAIN
+=====================================*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery .gallery-item figcaption {
+    margin-top: calc(-1.6rem - 15px);
+    margin-left: 15px;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--secondary-background);
+    line-height: 1;
+}
+
+.gallery .gallery-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: inherit;
+}
+
+.trips .places-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.trips .places-group .places {
+    background-color: var(--secondary-background);
+}
+
+.trips .places-group .places .place-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.trips .places-group .places .place-info .price {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.trips .places-group .places .place-info .btn {
+    background-color: var(--secondary-color);
+}
+
+/*=====================================
+# FOOTER
+=====================================*/
+
+.newsletter {
+    background-color: var(--secondary-color);
+
+    padding: 20px 10px;
+}
+
+.newsletter .title, .newsletter .description, .newsletter .form-group .input-group label {
+    color: var(--secondary-background);
+}
+
+.newsletter .btn {
+    background-color: var(--primary-color-lighter);
+}
+
+.contact address {
+    margin-bottom: 15px;
+}
+
+.contact address .address-item {
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.contact address .address-item i {
+    margin-right: 15px;
+}
+
+.contact .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact .input-group input {
+    padding: 15px 10px;
+}
+
+.contact .btn {
+    background-color: var(--text);
+}
+
+.bottom-bar {
+    align-items: center;
+}
+
+.bottom-bar .description {
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.bottom-bar .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+
+    opacity: 0.6;
+}
+
+.bottom-bar .social-media a:hover {
+    transform: scale(1.1);
+}
+
+.bottom-bar .social-media img {
+    width: 20px;
+}
+
+.bottom-bar .description a {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+.bottom-bar .description a:hover {
+    font-weight: 700;
+}

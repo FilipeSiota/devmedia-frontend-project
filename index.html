@@ -17,7 +17,13 @@
     <header>
         <section class="top-bar">
             <h1 id="logo"><i class="fi fi-sr-marker"></i>Logo</h1>
-            <i class="fi fi-br-search"></i>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="512" height="512">
+            <g>
+                <path d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/>
+            </g>
+            </svg>
         </section>
 
         <section class="header-content">
@@ -31,13 +37,21 @@
                 <div class="section-group-content">
                     <h2 class="title">Travel the world with us</h2>
 
-                    <label for="from">From</label>
-                    <input type="text" name="from" id="from" placeholder="Departing from">
+                    <form action="#">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="from">From</label>
+                                <input type="text" name="from" id="from" placeholder="Departing from">
+                            </div>
+                            <div class="input-group">
+                                <label for="to">To</label>
+                                <input type="text" name="to" id="to" placeholder="Arriving at">
+                            </div>
+                        </div>
 
-                    <label for="to">To</label>
-                    <input type="text" name="to" id="to" placeholder="Arriving at">
-
-                    <button type="button" class="btn">Search and find dates</button>
+                        <button type="button" class="btn">Search and find dates</button>
+                    </form>
+                    
                 </div>
             </div>
         </section>
@@ -54,46 +68,56 @@
                     <figcaption>Cinque Terre</figcaption>
                 </figure>
 
-                <figure class="gallery-item">
-                    <img src="./img/newyork.jpg" alt="New York">
-                    <figcaption>New York</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img src="./img/sanfran.jpg" alt="San Francisco">
-                    <figcaption>San Francisco</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img src="./img/pisa.jpg" alt="Pisa">
-                    <figcaption>Pisa</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img src="./img/paris.jpg" alt="Paris">
-                    <figcaption>Paris</figcaption>
-                </figure>
+                <div class="gallery-group">
+                    <figure class="gallery-item">
+                        <img src="./img/newyork.jpg" alt="New York">
+                        <figcaption>New York</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="./img/sanfran.jpg" alt="San Francisco">
+                        <figcaption>San Francisco</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="./img/pisa.jpg" alt="Pisa">
+                        <figcaption>Pisa</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="./img/paris.jpg" alt="Paris">
+                        <figcaption>Paris</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
-        <section class="box">
+        <section class="box trips">
             <h2 class="title">Explore Nature</h2>
             <p class="description">Travel with us and see nature at its finest.</p>
 
-            <div class="places">
-                <img src="./img/ocean.jpg" alt="West Coast - Norway">
-                <h2 class="title">West Coast, Norway</h2>
-                <p class="price">Roundtrip from $79</p>
-                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a href="#">Buy Tickets</a>
-            </div>
+            <div class="places-group">
+                <div class="places">
+                    <figure>
+                        <img src="./img/ocean.jpg" alt="West Coast - Norway">
+                    </figure>
 
-            <div class="places">
-                <img src="./img/mountains.jpg" alt="Mountains - Austria">
-                <h2 class="title">Mountains, Austria</h2>
-                <p class="price">One-way from $39</p>
-                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a href="#">Buy Tickets</a>
+                    <div class="place-info">
+                        <h2 class="title">West Coast, Norway</h2>
+                        <p class="price">Roundtrip from $79</p>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="places">
+                    <figure>
+                        <img src="./img/mountains.jpg" alt="Mountains - Austria">
+                    </figure>
+
+                    <div class="place-info">
+                        <h2 class="title">Mountains, Austria</h2>
+                        <p class="price">One-way from $39</p>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -103,10 +127,13 @@
             <h2 class="title">Get the best offers first!</h2>
             <p class="description">Join our newsletter.</p>
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Your Email address">
-
-            <button type="button" class="btn">Subscribe</button>
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email address">
+                </div>
+                <button type="button" class="btn">Subscribe</button>
+            </div>
         </section>
 
         <section class="box contact">
@@ -119,26 +146,28 @@
                 <p class="address-item"><i class="fi fi-sr-envelope"></i>Email: mail@mail.com</p>
             </address>
 
-            <input type="text" name="contact-name" id="contact-name" placeholder="Name">
-            <input type="email" name="contact-email" id="contact-email" placeholder="Email">
-            <input type="text" name="contact-message" id="contact-message" placeholder="Message">
+            <div class="input-group">
+                <input type="text" name="contact-name" id="contact-name" placeholder="Name">
+                <input type="email" name="contact-email" id="contact-email" placeholder="Email">
+                <input type="text" name="contact-message" id="contact-message" placeholder="Message">
+            </div>
 
             <button type="button" class="btn">SEND MESSAGE</button>
         </section>
 
-        <section class="bottom-bar">
+        <section class="box bottom-bar">
             <p class="description">Find Us On</p>
 
             <div class="social-media">
-                <img src="./img/social-medias/facebook.svg" alt="Facebook">
-                <img src="./img/social-medias/instagram.svg" alt="Instagram">
-                <img src="./img/social-medias/snapchat.svg" alt="Snapchat">
-                <img src="./img/social-medias/pinterest.svg" alt="Pinterest">
-                <img src="./img/social-medias/twitter.svg" alt="Twitter">
-                <img src="./img/social-medias/linkedin.svg" alt="Linkedin">
+                <a href="#"><img src="./img/social-medias/facebook.svg" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="./img/social-medias/instagram.svg" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="./img/social-medias/snapchat.svg" alt="Snapchat"></a>
+                <a href="#" target="_blank"><img src="./img/social-medias/pinterest.svg" alt="Pinterest"></a>
+                <a href="#" target="_blank"><img src="./img/social-medias/twitter.svg" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="./img/social-medias/linkedin.svg" alt="Linkedin"></a>
             </div>
 
-            <p class="description">Powered by <a href="http://w3.css">w3.css</a></p>
+            <p class="description">Powered by <a href="http://w3.css" target="_blank">w3.css</a></p>
         </section>
     </footer>
 </body>
