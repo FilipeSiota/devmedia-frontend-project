@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto da DevMedia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+<body>
+    <header>
+        <section class="top-bar">
+            <h1 id="logo"><i class="fi fi-sr-marker"></i>Logo</h1>
+            <i class="fi fi-br-search"></i>
+        </section>
+
+        <section class="header-content">
+            <div class="section-group">
+                <nav id="selector">
+                    <a href="#"><i class="fi fi-sr-plane-alt"></i>Flight</a>
+                    <a href="#"><i class="fi fi-sr-bed"></i>Hotel</a>
+                    <a href="#"><i class="fi fi-sr-car"></i>Rental</a>
+                </nav>
+
+                <div class="section-group-content">
+                    <h2 class="title">Travel the world with us</h2>
+
+                    <label for="from">From</label>
+                    <input type="text" name="from" id="from" placeholder="Departing from">
+
+                    <label for="to">To</label>
+                    <input type="text" name="to" id="to" placeholder="Arriving at">
+
+                    <button type="button" class="btn">Search and find dates</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="box">
+            <h2 class="title">Good Offers Right Now</h2>
+            <p class="description">Up to <strong>50%</strong> discount.</p>
+
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="./img/cinqueterre.jpg" alt="Cinque Terre">
+                    <figcaption>Cinque Terre</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="./img/newyork.jpg" alt="New York">
+                    <figcaption>New York</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="./img/sanfran.jpg" alt="San Francisco">
+                    <figcaption>San Francisco</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="./img/pisa.jpg" alt="Pisa">
+                    <figcaption>Pisa</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="./img/paris.jpg" alt="Paris">
+                    <figcaption>Paris</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="box">
+            <h2 class="title">Explore Nature</h2>
+            <p class="description">Travel with us and see nature at its finest.</p>
+
+            <div class="places">
+                <img src="./img/ocean.jpg" alt="West Coast - Norway">
+                <h2 class="title">West Coast, Norway</h2>
+                <p class="price">Roundtrip from $79</p>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <a href="#">Buy Tickets</a>
+            </div>
+
+            <div class="places">
+                <img src="./img/mountains.jpg" alt="Mountains - Austria">
+                <h2 class="title">Mountains, Austria</h2>
+                <p class="price">One-way from $39</p>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <a href="#">Buy Tickets</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="box newsletter">
+            <h2 class="title">Get the best offers first!</h2>
+            <p class="description">Join our newsletter.</p>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Your Email address">
+
+            <button type="button" class="btn">Subscribe</button>
+        </section>
+
+        <section class="box contact">
+            <h2 class="title">Contact</h2>
+            <p class="description">Let us book your next trip!</p>
+
+            <address>
+                <p class="address-item"><i class="fi fi-sr-marker"></i>Chicago, US</p>
+                <p class="address-item"><i class="fi fi-sr-call-history"></i>Phone: +00 151515</p>
+                <p class="address-item"><i class="fi fi-sr-envelope"></i>Email: mail@mail.com</p>
+            </address>
+
+            <input type="text" name="contact-name" id="contact-name" placeholder="Name">
+            <input type="email" name="contact-email" id="contact-email" placeholder="Email">
+            <input type="text" name="contact-message" id="contact-message" placeholder="Message">
+
+            <button type="button" class="btn">SEND MESSAGE</button>
+        </section>
+
+        <section class="bottom-bar">
+            <p class="description">Find Us On</p>
+
+            <div class="social-media">
+                <img src="./img/social-medias/facebook.svg" alt="Facebook">
+                <img src="./img/social-medias/instagram.svg" alt="Instagram">
+                <img src="./img/social-medias/snapchat.svg" alt="Snapchat">
+                <img src="./img/social-medias/pinterest.svg" alt="Pinterest">
+                <img src="./img/social-medias/twitter.svg" alt="Twitter">
+                <img src="./img/social-medias/linkedin.svg" alt="Linkedin">
+            </div>
+
+            <p class="description">Powered by <a href="http://w3.css">w3.css</a></p>
+        </section>
+    </footer>
+</body>
+</html>
